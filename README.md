@@ -11,5 +11,8 @@ Including SmartBoards, WhiteBoards, TackBoards, and generic InfoBoards. These ar
 * Human Aid assets \
 Assets including mobility aids (grab bars, banisters, etc.), restroom aids (toilet seat cover dispensers, soap dispensers, etc.) etc. are placed in `Asset / Human Aid`. These items have a separate category since they are usually miscellaneous.
 
-* Furniture additions \ 
+* Furniture additions \
 Including lockers, benches. 
+
+* Injury Response equipment \
+Created this section under Equipment to denote things like emergency eyewash stations, AEDs, first aid, etc. placed in `Asset / Equipment / Injury Response` A larger "Safety Asset" or "Safety Equipment" section could contain both these assets and the fire protection equipment.
