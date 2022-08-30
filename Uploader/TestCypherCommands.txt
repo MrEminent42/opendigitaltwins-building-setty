@@ -1,0 +1,8 @@
+Test object: 
+match (a:Interface {Name: 'Asset'})-[:hasContent]-(c:Content {Name: 'installedByRef'})-[:hasSchema]-(o:Object)-[:HasField]-(f:Field)-[:hasSchema]-(s:Schema) return a,c,o,f,s
+
+Test enum: 
+match (a:Interface {Name: 'Fan'})-[:hasContent]-(c:Content)-[:hasSchema]-(e:Enum)-[:hasValue]-(v:EnumValue) match (e)-[:hasValueSchema]-(s) return a,c,e,v,s
+
+Test map: 
+match (a:Interface {Name: 'Asset'})-[:hasContent]-(c:Content {Name: 'tags'})-[:hasSchema]-(s:Map)-[]->(p)-[:hasSchema]-(f) return a,c,s,p,f
