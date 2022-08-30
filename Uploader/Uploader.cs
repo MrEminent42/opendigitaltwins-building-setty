@@ -111,7 +111,7 @@ namespace AzureDTDL
 
                 int BATCH_SIZE = 1;
                 // create batches
-                for (int batch = 260; batch < (groupEntities.Count / BATCH_SIZE) + 1; batch++)
+                for (int batch = 0; batch < (groupEntities.Count / BATCH_SIZE) + 1; batch++)
                 {
                     Console.Write($"Batch {batch} ");
 

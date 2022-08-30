@@ -17,9 +17,10 @@ namespace AzureDTDL
     {
         static async Task Main(string[] args)
         {
-            // BoltGraphClient client = new BoltGraphClient(GraphDatabase.Driver("bolt://localhost:7687", AuthTokens.Basic("neo4j", "syyclops")));
-            string WILLOW_PATH = @"C:\Users\micro\dev\setty\ontology\Ontology\Willow";
-            string OPENTWINS_PATH = @"C:\Users\micro\dev\setty\ontology\Ontology\opendigitaltwins-building\Ontology";
+            // string WILLOW_PATH = @"C:\Users\micro\dev\setty\ontology\Ontology\Willow";
+            // string OPENTWINS_PATH = @"C:\Users\micro\dev\setty\ontology\Ontology\opendigitaltwins-building\Ontology";
+            string WILLOW_PATH = @"..\Ontology\Willow";
+            string OPENTWINS_PATH = @"..\Ontology\opendigitaltwins-building\Ontology";
 
             List<string> files = new List<string>();
             files.AddRange(Directory.GetFiles(WILLOW_PATH, "*", SearchOption.AllDirectories));
